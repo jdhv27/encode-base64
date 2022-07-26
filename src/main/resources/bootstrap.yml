@@ -1,0 +1,17 @@
+---
+spring:
+  application:
+    name: encode-base64
+  config:
+    name: ${spring.application.name}
+  cloud:
+    config:
+      uri: http://root:s3cr3t@localhost:8989
+info:
+  application:
+    name: ${spring.application.name}
+    description: Encode Base64 Application
+    version: '@project.version@'
+    spring-cloud-version: '@spring-cloud.version@'
+    spring-boot-version: '@project.parent.version@'
+
